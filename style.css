@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex: 1; /* Permite que el contenedor principal crezca */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+}
+
+.logo h1 a {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.search-section {
+    margin: 50px 0;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-section input{
+    width: 400px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    margin: 50px 0;
+    flex: 1; /* Permite que main ocupe el espacio restante */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.resources-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.resource-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resource-actions a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+}
+
+.resource-actions a.btn-download {
+    background-color: #28a745;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: white;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+
